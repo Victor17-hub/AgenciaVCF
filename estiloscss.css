@@ -1,0 +1,183 @@
+:root {
+    --red:#c81912;
+    --black:#333333;
+    --blue:#192965;
+    --white:#ffffff;
+}
+
+body {
+    background: #fff;
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+/** Menu de navegacion **/
+#header {
+    position: relative;
+    width: 100%;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+.menu .logo-box {
+   margin-left: 20px; 
+}
+
+.menu .logo-box h1 a {
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.menu .list-container {
+    margin-right: 20px;
+}
+
+.menu .list-container .lists {
+    display: flex;
+}
+
+.menu .list-container .lists li {
+    list-style: none;
+}
+
+.menu .list-container .lists li a {
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 8px;
+    color: var(--black);
+    border-radius: 24px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menu .list-container .lists li a.activo {
+    background: var(--red);
+    color: #fff;
+}
+
+.menu .list-container .lists li a:hover {
+    background: var(--red);
+    color: #fff;
+}
+
+.btn-menu > .fa-bars {
+    display: none;
+}
+/** Menu de navegacion **/
+
+/** Nuestros Viajes **/
+.our-projects {
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-top: 100px;
+}
+
+.our-projects .deg-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.our-projects .ejeZproject {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.our-projects .container-project {
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.our-projects .container-project .project-title {
+
+    padding: 10px;
+    text-align: center;
+
+    margin: auto;
+}
+
+.our-projects .container-project .project-title h2 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.our-projects .container-project .project-title hr {
+    background: #fff;
+    width: 50%;
+    margin: 10px auto;
+}
+
+/** Nuestros Viajes **/
+
+/** Tarjetas **/
+.ejeZproject .container-project .container {
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.ejeZproject .container-project .container .card {
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: var(--white);
+}
+
+.ejeZproject .container-project .container .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.ejeZproject .container-project .container .card img {
+    width: 330px;
+    height: 220px;
+}
+
+.ejeZproject .container-project .container .card h4 {
+    font-weight: 600;
+}
+
+.ejeZproject .container-project .container .card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.ejeZproject .container-project .container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+/** Tarjetas **/
